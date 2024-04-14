@@ -1,0 +1,24 @@
+{
+  "name": "fetch-discord-messages",
+  "version": "1.0.0",
+  "description": "Fetch all messages from a discord channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meesam4687/fetch-discord-messages.git"
+  },
+  "keywords": [
+    "discord",
+    "messages",
+    "fetch-all-messages"
+  ],
+  "author": "meesam4687",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meesam4687/fetch-discord-messages/issues"
+  },
+  "homepage": "https://github.com/meesam4687/fetch-discord-messages#readme"
+}
