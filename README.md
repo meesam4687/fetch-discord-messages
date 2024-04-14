@@ -1,7 +1,9 @@
 # Fetch Discord Messages
 This will allow you to fetch all messages from a discord channel
 Installation:
-```npm i fetch-discord-messages```
+```
+npm i fetch-discord-messages
+```
 Sample Usage:
 ```js
 const Discord = require('discord.js');
