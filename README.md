@@ -1,5 +1,5 @@
 # Fetch Discord Messages
-This will allow you to fetch all messages from a discord channel <br>
+This will allow you to fetch all messages from a discord channel <br><br>
 Installation:
 ```
 npm i fetch-discord-messages
