@@ -2,6 +2,7 @@ async function fetchAll(client, channelID) {
     if (!client || !channelID) throw new Error('Missing parameters');
     let channel = await client.channels.fetch(channelID);
     let lastMessageID;
+    let messagesObject = {};
     await channel.messages.fetch({ limit: 1, cache: false })
         .then(messages => {
             lastMessageID = messages.last().id;
@@ -14,12 +15,13 @@ async function fetchAll(client, channelID) {
         }
         await channel.messages.fetch({ limit: 100, cache: false, before: lastMessageID })
             .then(messages => {
-                if (messages.last() === undefined) {
+                let lastMsg = messages.last()
+                if (lastMsg === undefined) {
                     breaker = 1;
                     return;
                 }
                 let obj = Object.fromEntries(messages);
-                messagesObject = Object.assign({}, messagesObject, obj);
+                messagesObject = { ...messagesObject, ...obj };
                 lastMessageID = messages.last().id;
             })
             .catch(console.error);
