@@ -1,6 +1,6 @@
 {
   "name": "fetch-discord-messages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fetch all messages from a discord channel",
   "main": "index.js",
   "scripts": {
